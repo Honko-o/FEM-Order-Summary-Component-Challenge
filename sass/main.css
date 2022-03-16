@@ -1,0 +1,146 @@
+/*
+    Prefixer Mixin
+    Mixin to add Vendor Prefixes to CSS Properties
+*/
+/*
+    Overlay Mixin
+    Mixin To add Basic Overlay properties
+*/
+/* 
+    Flexbox Mixin
+    Mixin To Apply Flexbox Properties
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  position: relative;
+}
+@media (min-width: 992px) {
+  body {
+    background-image: url("../../images/pattern-background-desktop.svg");
+  }
+}
+
+.order-summary-card {
+  max-width: 350px;
+  background-color: white;
+  text-align: center;
+  margin: 0 20px;
+  border-radius: 20px;
+}
+.order-summary-card .order-image img {
+  display: block;
+  max-width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.order-summary-card .order-wrapper {
+  padding: 20px;
+}
+.order-summary-card .order-title {
+  font-size: 1.3em;
+  font-weight: 900;
+  color: #1f2f56;
+  margin-top: 0;
+}
+.order-summary-card .order-description {
+  line-height: 1.5;
+  font-weight: 500;
+  color: #7280a7;
+}
+.order-summary-card .order-plan {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: #f5f7ff;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.order-summary-card .plan-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+}
+.order-summary-card .text .plan-type {
+  color: #1f2f56;
+  font-weight: 900;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.order-summary-card .text .plan-price {
+  color: #7280a7;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.order-summary-card a.change {
+  text-decoration: underline;
+  color: #3829e0;
+  font-weight: 900;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.order-summary-card a.change:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+.order-summary-card a.proceed-payment {
+  background-color: #3829e0;
+  color: white;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.order-summary-card a.proceed-payment:hover {
+  opacity: 0.8;
+}
+.order-summary-card a.cancel-order {
+  color: #7280a7;
+  font-weight: 900;
+  opacity: 0.8;
+  transition: opacity 0.3s, color 0.3s;
+}
+.order-summary-card a.cancel-order:hover {
+  color: #1f2f56;
+  opacity: 1;
+}
+.order-summary-card a.proceed-payment,
+.order-summary-card a.cancel-order {
+  display: block;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,8 @@
+@use '../helpers/' as *;
+
+body {
+    font-size: $root-font-size;
+    font-family: $font-family;
+}
+
+// Weights: 500, 700, 900
